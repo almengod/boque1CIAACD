@@ -11,7 +11,7 @@ dt = joblib.load('dt1.joblib')
 # Create Flask app
 server = Flask(__name__)
 # Define route to send JSON data
-@server.route('/predictjson', methods=['POST'])<
+@server.route('/predictjson', methods=['POST']) 
 def predictjson():
     # Procesar los datos de entrada
     data = request.json
